@@ -131,8 +131,8 @@ class Thumbs extends Component {
             let img = item;
 
             // if the item is not an image, try to find the first image in the item's children.
-            if (item.type !== 'img') {
-                img = Children.toArray(item.props.children).filter((children) => children.type === 'img')[0];
+            if (item.type !== 'CarouselLogo') {
+                img = Children.toArray(item.props.children).filter((children) => children.type === 'CarouselLogo')[0];
             }
 
             if (!img || img.length === 0) {
